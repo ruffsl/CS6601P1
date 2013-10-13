@@ -76,4 +76,5 @@ def party_dijkstra(G,source,target=None,cutoff=None,weight='weight'):
     try:
         return paths[target]
     except KeyError:
+        nx.draw_spectral(G)
         raise nx.NetworkXNoPath("node %s not reachable from %s"%(source,target))
