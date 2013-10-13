@@ -61,7 +61,7 @@ def party_dijkstra(G,source,target=None,cutoff=None,weight='weight'):
                 if (str(w)[0] == 'D'):
                     S = paths[v][1].lstrip('S')
                     D = str(w).lstrip('D')
-                    print 'S,D: ', S, D
+                    #print 'S,D: ', S, D
                     if S == D:
                         #print 'Yha!!'
                         seen[w] = vw_dist
