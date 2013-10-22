@@ -55,6 +55,10 @@
 <h3>
 <a name="what-does-capacity-constrained-mean-or-what-does-it-look-like" class="anchor" href="#what-does-capacity-constrained-mean-or-what-does-it-look-like"><span class="octicon octicon-link"></span></a>What does Capacity Constrained mean or what does it look like?</h3>
 
+<p>The figures below are visual representations of our capacity constrained networks used for our testing.<br>
+Node numbers represent maximum capacity, denoted by the size of the shaded blue outline and population colored red for evacuation zone and orange for an existing responder.<br>
+The edge numbers represent edge capacity denoted by edge width and travel time denoted by green to yellow for fast to slow.</p>
+
 <table>
 <tr valign="top">
 <td>Endangered Capacity Constrained Graph<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CCRP_grid_2d_5x5_Evac_Before_1.png">
@@ -79,11 +83,22 @@
 <h3>
 <a name="so-how-does-ccrp-work" class="anchor" href="#so-how-does-ccrp-work"><span class="octicon octicon-link"></span></a>So how does CCRP work?</h3>
 
+<p>For any type of evacuation agenda, zones defining both hazards and havens are defined, giving an evacuee route planner a set of endangered sources and refuge destinations. From there, we generate evacuation plans for all the evacuees while minimizing total evacuation time. CCRP does this by calculating the quickest possible route at the soonest possible time given a list of sources and destinations. This is done by generating a single pair fictitious super-source and super-destination vertices that connect to the list of sources and destinations respectively.  </p>
+
+<p>This allows for a simple search such as Dijkstra's algorithm to solve for the quickest path between the two super vertices using edge travel time as the weight criteria. Once this path is found, the maximum flow along that path is calculated by determining the minimum of the three parameters i.e. current source population, minimum available edge and node capacity along the path. Bookkeeping for available capacities within the graph is done to allow the algorithm to check and update reservations along the path. If the quickest path at the current start time has no more available capacity, it repetitively looks into the future and checks for available capacity along same path again.</p>
+
 <h3>
 <a name="how-is-mpccrp-diffrent" class="anchor" href="#how-is-mpccrp-diffrent"><span class="octicon octicon-link"></span></a>How is MPCCRP diffrent?</h3>
 
-<h3>
+<p>MPCCRP is an expansion off CCRP by simply taking the idea of super sources and super destinations just a step further by introducing sub sources and sub destinations that are affiliated with the locations or nodes of each party. These sub sources serve as an intermediary between the capacity constrained network and the fictitious super nodes.</p>
+
+<table><td>CCRP vs MPCCRP<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/Old_vs_New.png">
+        <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/Old_vs_New.png" width="408"></a>
+  
+</td></table><h3>
 <a name="ok-show-me-some-cool-stuff" class="anchor" href="#ok-show-me-some-cool-stuff"><span class="octicon octicon-link"></span></a>Ok, Show me some cool stuff!</h3>
+
+<p>I wish I could get matplotlib to successfully save a GIF file showing an animation of executing the emergency route plan, specifically rendering the migration of both evacuees and responders to their designated destinations. But in the meantime, go check it out by simply running the MPCCRP iPython Notebook listed down in the <a href="#code">Code</a> section on your computer.</p>
 
 <h1>
 <a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h1>
