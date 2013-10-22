@@ -28,26 +28,48 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-our-project-page" class="anchor" href="#welcome-to-our-project-page"><span class="octicon octicon-link"></span></a>Welcome to our project page.</h3>
+          <h1>
+<a name="welcome-to-our-project-page" class="anchor" href="#welcome-to-our-project-page"><span class="octicon octicon-link"></span></a>Welcome to our project page</h1>
 
-<p>Evacuation Route Planning (ERP) has grown ever more imperative due to the increasing impact of natural disasters and threats of terrorism on modern infrastructure. To help mitigate loss due to these and similar large-scale situations such as nuclear disasters, ERP tasks are becoming more complex. Other complicating elements include increasing population densities, larger structures within urban environments served by multifaceted transportation networks. Because of the multitude of factors, all driving the problem toward greater scales, the ability to handcraft ideal ERPs has become nearly infeasible. This has led emergency planners to turn to artificial intelligence algorithms to quickly generate optimal paths for large-scale civilian evacuations under multiple scenarios. Multi-Party Capacity Constrained Route Planning (MPCCRP) is project geared towards developing a modified version of the original CCRP algorithm for multiple parties with separate objectives. Such scenarios include civilian evacuation route planning with additional emergency response coordination.</p>
+<p>Evacuation Route Planning (<strong>ERP</strong>) has grown ever more imperative due to the increasing impact of natural disasters and threats of terrorism on modern infrastructure. To help mitigate loss due to these and similar large-scale situations such as nuclear disasters, ERP tasks are becoming more complex. Other complicating elements include increasing population densities, larger structures within urban environments served by multifaceted transportation networks. Because of the multitude of factors, all driving the problem toward greater scales, the ability to handcraft ideal ERPs has become nearly infeasible. This has led emergency planners to turn to artificial intelligence algorithms to quickly generate optimal paths for large-scale civilian evacuations under multiple scenarios. Multi-Party Capacity Constrained Route Planning (<strong>MPCCRP</strong>) is project geared towards developing a modified version of the original CCRP algorithm for multiple parties with separate objectives. Such scenarios include civilian evacuation route planning with additional emergency response coordination.</p>
+
+<h1>
+<a name="contents" class="anchor" href="#contents"><span class="octicon octicon-link"></span></a>Contents</h1>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li>
+<a href="#documentation">Documentation</a> </li>
+<li>
+<a href="#code">Code</a><br>
+</li>
+<li>
+<a href="#authors">Authors</a><br>
+</li>
+<li>
+<a href="#references">References</a><br>
+</li>
+</ul><h1>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h1>
+
+<h3>
+<a name="what-does-capacity-constrained-mean-or-what-does-it-look-like" class="anchor" href="#what-does-capacity-constrained-mean-or-what-does-it-look-like"><span class="octicon octicon-link"></span></a>What does Capacity Constrained mean or what does it look like?</h3>
 
 <table>
 <tr height="404" valign="top">
-<td>Endangered Capacity Constrained Graph<br><a href="http://bl.ocks.org/mbostock/4063269">
+<td>Endangered Capacity Constrained Graph<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CCRP_grid_2d_5x5_Evac_Before_1.png">
         <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CCRP_grid_2d_5x5_Evac_Before_1.png" width="404"></a>
     </td>
     
-    <td>Evacuated Capacity Constrained Graph<br><a href="http://bl.ocks.org/mbostock/4061502">
+    <td>Evacuated Capacity Constrained Graph<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CCRP_grid_2d_5x5_Evac_After_1.png">
         <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CCRP_grid_2d_5x5_Evac_After_1.png" width="404"></a>
     </td>
   </tr>
-<td>Large-Scale Graph With Responders<br><a href="http://bl.ocks.org/mbostock/4061961">
+<td>Large-Scale Graph With Responders<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CS6601P1-Code-Python-CCRP_grid_2d_9x9_Before_1.png">
         <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CS6601P1-Code-Python-CCRP_grid_2d_9x9_Before_1.png" width="404"></a>
     </td>
     
-    <td>Evacuated Graph With Responders<br><a href="http://bl.ocks.org/mbostock/4063318">
+    <td>Evacuated Graph With Responders<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CS6601P1-Code-Python-CCRP_grid_2d_9x9_After_1.png">
         <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/CS6601P1-Code-Python-CCRP_grid_2d_9x9_After_1.png" width="404"></a>
     </td>
   
@@ -55,29 +77,45 @@
 </table><p></p>
 
 <h3>
-<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h3>
-
-<p>Our original paper of our supporting work in developing MPCCRP can be found here:<br><a href="https://github.com/ruffsl/CS6601P1/tree/master/Documentation">Documentation</a></p>
+<a name="so-how-does-ccrp-work" class="anchor" href="#so-how-does-ccrp-work"><span class="octicon octicon-link"></span></a>So how does CCRP work?</h3>
 
 <h3>
-<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code</h3>
-
-<p>Our original Python code and examples can also be found at our GitHub repo:<br><a href="https://github.com/ruffsl/CS6601P1">MPCCRP Repo</a></p>
+<a name="how-is-mpccrp-diffrent" class="anchor" href="#how-is-mpccrp-diffrent"><span class="octicon octicon-link"></span></a>How is MPCCRP diffrent?</h3>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="ok-show-me-some-cool-stuff" class="anchor" href="#ok-show-me-some-cool-stuff"><span class="octicon octicon-link"></span></a>Ok, Show me some cool stuff!</h3>
 
-<p><a href="http://about.me/ruffin">Ruffin White</a> (<a href="https://github.com/ruffsl" class="user-mention">@ruffsl</a>)<br>
-Varun Murali (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>) </p>
+<h1>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h1>
 
-<h3>
-<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h3>
+<p>Our project documentation can be found here:<br><a href="https://github.com/ruffsl/CS6601P1/tree/master/Documentation"><strong>Documentation</strong></a></p>
 
-<p>S. Shekhar, K. Yang, V. M. Gunturi, L. Manikonda, D. Oliver, X. Zhou, B. George, S. Kim, J. M. Wolff, and     Q. Lu, “Experiences with evacuation route planningalgorithms, ”International Journal of Geographical Information Science, vol. 26, no. 12, pp. 2253–2265, Dec. 2012. [Online]. Available: <a href="http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.719624">http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.719624</a></p>
+<p>Our original paper of our supporting work in developing MPCCRP can be found here:<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Papers/Civilian%20Evacuation%20and%20Route%20Planning%20Coordinated%20with%20Emergency%20Response.pdf"><strong>Civilian Evacuation and Route Planning Coordinated with Emergency Response</strong></a></p>
 
-<p>F. Itwm, “Mathematical Modelling of Evacuation Problems : A State of Art,” vol. 24, no. 24, 2001.</p>
+<p>Our project poseter can be found here:  </p>
 
-<p>B. George and S. Shekhar, “Time-Aggregated Graphs for Modeling,” pp.85–99, 2006.</p>
+<table><tr height="202" valign="top"><td>Click to view PDF<br><a href="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/Civilian%20Evacuation%20and%20Route%20Planning%20Coordinated%20with%20Emergency%20Response.pdf">
+        <img src="https://github.com/ruffsl/CS6601P1/raw/master/Documentation/Figures/Civilian%20Evacuation%20Route%20Planning%20Preview.png" width="202"></a>
+  </td></tr></table><h1>
+<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code</h1>
+
+<p>A web-based interactive example of our code can be seen here using Python Notebook:<br><a href="https://github.com/ruffsl/CS6601P1"><strong>Web Demo</strong></a></p>
+
+<p>Our original Python code and examples can also be found at our GitHub repo:<br><a href="https://github.com/ruffsl/CS6601P1"><strong>MPCCRP Repo</strong></a></p>
+
+<h1>
+<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h1>
+
+<p><a href="http://about.me/ruffin"><strong><em>Ruffin White</em></strong></a> (<a href="https://github.com/ruffsl" class="user-mention">@ruffsl</a>)<br><strong><em>Varun Murali</em></strong> (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>) </p>
+
+<h1>
+<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h1>
+
+<p>[1] S. Shekhar, K. Yang, V. M. Gunturi, L. Manikonda, D. Oliver, X. Zhou, B. George, S. Kim, J. M. Wolff, and     Q. Lu, “Experiences with evacuation route planningalgorithms, ”International Journal of Geographical Information Science, vol. 26, no. 12, pp. 2253–2265, Dec. 2012. [Online]. Available: <a href="http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.719624">http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.719624</a></p>
+
+<p>[2] F. Itwm, “Mathematical Modelling of Evacuation Problems : A State of Art,” vol. 24, no. 24, 2001.</p>
+
+<p>[3] B. George and S. Shekhar, “Time-Aggregated Graphs for Modeling,” pp.85–99, 2006.</p>
         </section>
 
         <aside id="sidebar">
